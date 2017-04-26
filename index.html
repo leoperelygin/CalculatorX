@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CalculatorX</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  </head>
+  <body>
+      <div class="up">
+        <div>
+          <input type="text" id="display" readonly="true">
+        </div>
+      </div>
+          <div>
+            <div class="row">
+              <div class="button red" onclick='backspace("")'>Bs</div>
+              <div class="button red" onclick='setInputText("")'>C</div>
+              <div class="button green" onclick='math("(")'>(</div>
+              <div class="button green" onclick='math(")")'>)</div>
+            </div>
+            <div class="row">
+              <div class="button blue" onclick='math("7")'>7</div>
+              <div class="button blue" onclick='math("8")'>8</div>
+              <div class="button blue" onclick='math("9")'>9</div>
+              <div class="button purple" onclick='math("/")'>/</div>
+            </div>
+            <div class="row">
+              <div class="button blue" onclick='math("4")'>4</div>
+              <div class="button blue" onclick='math("5")'>5</div>
+              <div class="button blue" onclick='math("6")'>6</div>
+              <div class="button purple" onclick='math("*")'>*</div>
+            </div>
+            <div class="row">
+              <div class="button blue" onclick='math("1")'>1</div>
+              <div class="button blue" onclick='math("2")'>2</div>
+              <div class="button blue" onclick='math("3")'>3</div>
+              <div class="button purple" onclick='math("-")'>-</div>
+            </div>
+            <div class="row">
+              <div class="button blue" onclick='math("0")'>0</div>
+              <div class="button yellow" onclick='math(".")'>.</div>
+              <div class="button yellow" onclick='calc()'>=</div>
+              <div class="button purple" onclick='math("+")'>+</div>
+            </div>
+          </div>
+
+  </body>
+  <script type="text/javascript" src="calculator.js"></script>
+</html>
